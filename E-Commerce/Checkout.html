@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - ArthDepth</title>
+  <link rel="stylesheet" href="ArthDepthStyle.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navdiv">
+      <div class="logo">
+        <a href="Index.html">
+          <img src="DESIGNS MOCK UP PSD/SmallLogoWhite50.png" alt="Logo"> ArthDepth
+        </a>
+      </div>
+      <ul>
+        <li><a href="Cart.html">Add-to-Cart</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="logo-container">
+    <a href="Index.html">
+      <img src="DESIGNS MOCK UP PSD/SmallLogoBlack120.png" alt="Logo">
+    </a>
+  </div>
+  <div class="container">
+    <div class="checkout-header">
+      <h1>Checkout</h1>
+    </div>
+    <div class="checkout-content">
+      <div class="checkout-section">
+        <h2>Contact Information</h2>
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+      </div>
+      
+      <div class="checkout-section">
+        <h2>Shipping Address</h2>
+        <div class="form-group">
+          <label for="address">Address</label>
+          <input type="text" id="address" name="address" required>
+        </div>
+        <div class="form-group">
+          <label for="postal-code">Postal Code</label>
+          <input type="text" id="postal-code" name="postal-code" required>
+        </div>
+        <div class="form-group">
+          <label for="city">City</label>
+          <input type="text" id="city" name="city" required>
+        </div>
+        <div class="form-group">
+          <label for="region">Region</label>
+          <select id="region" name="region" required>
+            <option value="" disabled selected>Select your region</option>
+            <option value="NCR">NCR</option>
+            <option value="Region I">Region I</option>
+            <option value="Region II">Region II</option>
+            <option value="Region III">Region III</option>
+            <option value="Region IV-A">Region IV-A</option>
+            <!-- Add other regions as needed -->
+          </select>
+        </div>
+      </div>
+      <div class="checkout-section">
+        <h2>Payment Method</h2>
+        <div id="payment-methods">
+          <label>
+            <input type="radio" name="payment-method" value="gcash">
+            Gcash
+          </label>
+          <label>
+            <input type="radio" name="payment-method" value="cod">
+            Cash on Delivery (COD)
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="checkout-footer">
+      <button id="submit-button">Pay Now</button>
+    </div>
+  </div>
+
+  <script src="checkout.js"></script>
+</body>
+</html>
